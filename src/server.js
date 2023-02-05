@@ -12,8 +12,6 @@ const port = 3000
 
 app.use(bodyParser.json());
 
-console.log(123)
-
 database.serialize(() => {
   database.run("CREATE TABLE IF NOT EXISTS movies (name varchar(255))");
 
