@@ -1,11 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const path = require('node:path');
-
-const pathToDb = path.basename("/src/db/database.db")
 
 const sqlite3 = require('sqlite3').verbose();
-const database = new sqlite3.Database(pathToDb);
+const database = new sqlite3.Database("./src/db/database.db");
 
 const app = express()
 const port = 3004
