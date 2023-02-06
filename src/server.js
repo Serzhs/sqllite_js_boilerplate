@@ -8,7 +8,7 @@ const sqlite3 = require('sqlite3').verbose();
 const database = new sqlite3.Database(pathToDb);
 
 const app = express()
-const port = 3000
+const port = 3004
 
 app.use(bodyParser.json());
 
